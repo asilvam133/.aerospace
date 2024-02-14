@@ -5,7 +5,7 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 
 [mode.main.binding]
 alt-enter = 'exec-and-forget open -na /Applications/kitty.app'
-alt-space = 'exec-and-forget open -na "/Applications/Brave Browser.app"'
+alt-space = 'exec-and-forget open -na "/Applications/Firefox.app"'
 alt-m = 'exec-and-forget open -a "/Applications/Spotify.app"'
 alt-s = 'exec-and-forget open -a "/Applications/Slack.app"'
 alt-o = 'exec-and-forget open -a "/Applications/Obsidian.app"'
