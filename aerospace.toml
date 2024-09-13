@@ -71,3 +71,7 @@ j = 'resize height -50'
 l = 'resize width +50'
 enter = 'mode main'
 esc = 'mode main'
+
+[workspace-to-monitor-force-assignment]
+6 = 'built-in'
+7 = 'built-in'
