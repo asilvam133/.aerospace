@@ -73,4 +73,15 @@ esc = 'mode main'
 
 [workspace-to-monitor-force-assignment]
 6 = 'built-in'
-7 = 'built-in'
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = 'move-node-to-workspace 6'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = 'move-node-to-workspace 9'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.edgemac'
+run = 'move-node-to-workspace 0'
