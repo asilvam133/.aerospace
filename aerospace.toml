@@ -5,64 +5,81 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 automatically-unhide-macos-hidden-apps = false
 
 [mode.main.binding]
-alt-t = 'exec-and-forget open -na /Applications/Ghostty.app'
-alt-space = 'exec-and-forget open -na "/Applications/Safari.app"'
-alt-m = 'exec-and-forget open -a "/Applications/TIDAL.app"'
-alt-s = 'exec-and-forget open -a "/Applications/Slack.app"'
-alt-w = 'exec-and-forget open -a "/Applications/WhatsApp.app"'
+    # Opening apps shortcuts
+    alt-t = 'exec-and-forget open -na /Applications/Ghostty.app'
+    alt-space = 'exec-and-forget open -na "/Applications/Safari.app"'
+    alt-m = 'exec-and-forget open -a "/Applications/TIDAL.app"'
+    alt-s = 'exec-and-forget open -a "/Applications/Slack.app"'
+    alt-w = 'exec-and-forget open -a "/Applications/WhatsApp.app"'
 
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+    # Focus directions bindings
+    alt-h = 'focus left'
+    alt-j = 'focus down'
+    alt-k = 'focus up'
+    alt-l = 'focus right'
 
-alt-shift-h = 'move left'
-alt-shift-j = 'move down'
-alt-shift-k = 'move up'
-alt-shift-l = 'move right'
+    # Move directions bindings within workspace
+    alt-shift-h = 'move left'
+    alt-shift-j = 'move down'
+    alt-shift-k = 'move up'
+    alt-shift-l = 'move right'
 
-alt-slash = 'split horizontal'
-alt-minus = 'split vertical'
+    # Layout to apply to a window when opening new app
+    alt-slash = 'split horizontal'
+    alt-minus = 'split vertical'
 
-alt-f = 'fullscreen'
+    # Layout shortcuts
+    alt-f = 'fullscreen'
+    cmd-j = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
+    alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 
-cmd-j = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
+    # Go to workspace
+    alt-shift-equal = 'workspace 1'
+    alt-leftSquareBracket = 'workspace 2'
+    alt-shift-leftSquareBracket = 'workspace 3'
+    alt-shift-9 = 'workspace 4'
+    alt-shift-7 = 'workspace 5'
+    alt-equal = 'workspace 6'
+    alt-shift-0 = 'workspace 7'
+    alt-shift-rightSquareBracket = 'workspace 8'
+    alt-rightSquareBracket = 'workspace 9'
+    alt-shift-8 = 'workspace 10'
+    alt-shift-4 = 'workspace 11'
+    alt-shift-1 = 'workspace 12'
+    alt-shift-backslash = 'workspace 13'
 
-alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
+    # Send window to workspace
+    alt-1 = ['move-node-to-workspace 1', 'workspace 1']
+    alt-2 = ['move-node-to-workspace 2', 'workspace 2']
+    alt-3 = ['move-node-to-workspace 3', 'workspace 3']
+    alt-4 = ['move-node-to-workspace 4', 'workspace 4']
+    alt-5 = ['move-node-to-workspace 5', 'workspace 5']
+    alt-6 = ['move-node-to-workspace 6', 'workspace 6']
+    alt-7 = ['move-node-to-workspace 7', 'workspace 7']
+    alt-8 = ['move-node-to-workspace 8', 'workspace 8']
+    alt-9 = ['move-node-to-workspace 9', 'workspace 9']
+    alt-0 = ['move-node-to-workspace 10', 'workspace 10']
+    alt-shift-backtick = ['move-node-to-workspace 11', 'workspace 11']
+    alt-shift-5 = ['move-node-to-workspace 12', 'workspace 12']
+    alt-backtick = ['move-node-to-workspace 13', 'workspace 13']
 
-# Not supported, because this command is redundant in AeroSpace mental model.
-# See: https://nikitabobko.github.io/AeroSpace/guide.html#floating-windows
-#alt-space = 'focus toggle_tiling_floating'
+    # Send window to workspace (silent)
+    alt-cmd-shift-equal = 'move-node-to-workspace 1'
+    alt-cmd-leftSquareBracket = 'move-node-to-workspace 2'
+    alt-cmd-shift-leftSquareBracket = 'move-node-to-workspace 3'
+    alt-cmd-shift-9 = 'move-node-to-workspace 4'
+    alt-cmd-shift-7 = 'move-node-to-workspace 5'
+    alt-cmd-equal = 'move-node-to-workspace 6'
+    alt-cmd-shift-0 = 'move-node-to-workspace 7'
+    alt-cmd-shift-rightSquareBracket = 'move-node-to-workspace 8'
+    alt-cmd-rightSquareBracket = 'move-node-to-workspace 9'
+    alt-cmd-shift-8 = 'move-node-to-workspace 10'
+    alt-cmd-shift-4 = 'move-node-to-workspace 11'
+    alt-cmd-shift-1 = 'move-node-to-workspace 12'
+    alt-cmd-shift-backslash = 'move-node-to-workspace 13'
 
-# `focus parent`/`focus child` are not yet supported, and it's not clear whether they
-# should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
-# alt-a = 'focus parent'
-
-alt-shift-equal = 'workspace 1'
-alt-leftSquareBracket = 'workspace 2'
-alt-shift-leftSquareBracket = 'workspace 3'
-alt-shift-9 = 'workspace 4'
-alt-shift-7 = 'workspace 5'
-alt-equal = 'workspace 6'
-alt-shift-0 = 'workspace 7'
-alt-shift-rightSquareBracket = 'workspace 8'
-alt-rightSquareBracket = 'workspace 9'
-alt-shift-8 = 'workspace 10'
-
-alt-1 = 'move-node-to-workspace 1'
-alt-2 = 'move-node-to-workspace 2'
-alt-3 = 'move-node-to-workspace 3'
-alt-4 = 'move-node-to-workspace 4'
-alt-5 = 'move-node-to-workspace 5'
-alt-6 = 'move-node-to-workspace 6'
-alt-7 = 'move-node-to-workspace 7'
-alt-8 = 'move-node-to-workspace 8'
-alt-9 = 'move-node-to-workspace 9'
-alt-0 = 'move-node-to-workspace 10'
-
-alt-shift-c = 'reload-config'
-
-alt-r = 'mode resize'
+    alt-shift-c = 'reload-config'
+    alt-r = 'mode resize'
 
 [mode.resize.binding]
 h = 'resize width -50'
@@ -73,8 +90,18 @@ enter = 'mode main'
 esc = 'mode main'
 
 [workspace-to-monitor-force-assignment]
-6 = 'built-in'
+11 = 'built-in'
+12 = 'built-in'
+13 = 'built-in'
 
 [[on-window-detected]]
-    if.app-id = 'com.tidal.desktop'
-    run = 'move-node-to-workspace 6'
+if.app-id = 'net.whatsapp.WhatsApp'
+run = 'move-node-to-workspace 11'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = 'move-node-to-workspace 12'
+
+[[on-window-detected]]
+if.app-id = 'com.tidal.desktop'
+run = 'move-node-to-workspace 13'
